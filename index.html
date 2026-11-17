@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecido Epitelial e Conjuntivo | Histologia para Enfermagem</title>
+  <meta name="description" content="Material de estudo guiado por imagens sobre tecido epitelial e tecido conjuntivo para estudantes de enfermagem: o que é, como reconhecer na lâmina e por que importa na prática.">
+  <meta name="theme-color" content="#0d6a72">
+
+  <!-- Tema aplicado antes da renderização para evitar "piscar" -->
+  <script>
+    (function () {
+      var root = document.documentElement, t = null;
+      root.classList.remove('no-js'); root.classList.add('js');
+      try { t = localStorage.getItem('histo-tema'); } catch (e) {}
+      if (t !== 'dark' && t !== 'light') {
+        t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      root.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Ícones (sprite SVG) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-5M12 8h.01"/></symbol>
+    <symbol id="i-micro" viewBox="0 0 24 24"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></symbol>
+    <symbol id="i-pratica" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2.7s-6 6.3-6 11.3a6 6 0 0 0 12 0c0-5-6-11.3-6-11.3Z"/></symbol>
+    <symbol id="i-absorb" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></symbol>
+    <symbol id="i-novessel" viewBox="0 0 24 24"><path d="M3 12c3-4 6 4 9 0s6 4 9 0"/><path d="M4 4l16 16"/></symbol>
+    <symbol id="i-polar" viewBox="0 0 24 24"><path d="M12 3v18M8 7l4-4 4 4M8 17l4 4 4-4"/></symbol>
+    <symbol id="i-bm" viewBox="0 0 24 24"><path d="M3 17h18"/><rect x="4" y="5" width="4" height="9" rx="1"/><rect x="10" y="5" width="4" height="9" rx="1"/><rect x="16" y="5" width="4" height="9" rx="1"/></symbol>
+    <symbol id="i-diffuse" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></symbol>
+    <symbol id="i-renew" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ Cabeçalho fixo ============ -->
+<header class="site-header" id="topo">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Histologia para Enfermagem — voltar ao início">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 3 35 11.5v17L20 37 5 28.5v-17Z" fill="var(--sv-cell)" stroke="var(--eosin)" stroke-width="2"/>
+        <ellipse cx="20" cy="21" rx="6.5" ry="5.5" fill="var(--hema)"/>
+      </svg>
+      <span>Histologia na Enfermagem<small>Epitelial &amp; Conjuntivo</small></span>
+    </a>
+
+    <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#epitelial">Tecido epitelial</a></li>
+        <li><span class="nav-soon" aria-disabled="true" title="Disponível na Etapa 2">Tecido conjuntivo <small>em breve</small></span></li>
+        <li><span class="nav-soon" aria-disabled="true" title="Disponível na Etapa 3">Revisar <small>em breve</small></span></li>
+        <li><span class="nav-soon" aria-disabled="true" title="Disponível na Etapa 3">Quiz e jogos <small>em breve</small></span></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" type="button" id="theme-toggle" aria-label="Ativar tema escuro">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" id="menu-toggle" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progress-bar"></div></div>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Histologia aplicada à enfermagem</p>
+      <h1 id="hero-title">Tecido <span class="grad">epitelial</span> e tecido <span class="grad">conjuntivo</span></h1>
+      <p class="hero-lead">Aprenda a reconhecer cada tecido na lâmina e a entender por que isso importa no cuidado — da punção venosa à cicatrização de feridas. Material guiado por imagens, esquemas interativos e exemplos clínicos.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#epitelial">Começar pelo epitelial
+          <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
+        <a class="btn btn--ghost" href="#ep-lamina">Como ler uma lâmina</a>
+      </div>
+      <p class="visually-hidden">Cada tópico é organizado em três blocos, identificados por cor:</p>
+      <ul class="legend" aria-label="Legenda dos blocos de estudo">
+        <li><span class="dot dot--oque" aria-hidden="true"></span>O que é</li>
+        <li><span class="dot dot--lamina" aria-hidden="true"></span>Como reconhecer na lâmina</li>
+        <li><span class="dot dot--pratica" aria-hidden="true"></span>NA PRÁTICA (enfermagem)</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      <div class="scope" id="hero-scope">
+        <!-- Campo de células animado, gerado por script.js (decorativo) -->
+        <svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><rect width="400" height="400" class="sv-lumen"/><g class="hero-field" id="hero-field"></g></svg>
+      </div>
+      <p class="scope-caption">Esquema de um epitélio visto de cima: células poligonais justapostas, cada uma com seu núcleo.</p>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#epitelial" aria-label="Rolar para a seção de tecido epitelial">
+    <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg>
+  </a>
+</section>
+
+<!-- ============ PARTE 1 — TECIDO EPITELIAL ============ -->
+<section class="part-banner" id="epitelial" aria-labelledby="ep-title">
+  <div class="container">
+    <p class="part-num">Parte 1</p>
+    <h2 id="ep-title">Tecido epitelial</h2>
+    <p>É o tecido que <strong>reveste</strong> superfícies (pele, mucosas, vasos) e <strong>forma glândulas</strong>. Para a enfermagem, é o tecido que você toca, inspeciona, punciona, limpa e protege todos os dias.</p>
+    <nav aria-label="Tópicos do tecido epitelial">
+      <ul class="toc">
+        <li><a class="chip" href="#ep-caracteristicas">Características</a></li>
+        <li><a class="chip" href="#ep-lamina">Como ler a lâmina</a></li>
+        <li><a class="chip" href="#ep-funcoes">Funções</a></li>
+        <li><a class="chip" href="#ep-classificacao">Classificação e galeria</a></li>
+        <li><a class="chip" href="#ep-pele">A pele em camadas</a></li>
+        <li><a class="chip" href="#ep-glandular">Epitélio glandular</a></li>
+        <li><a class="chip" href="#ep-juncoes">Junções celulares</a></li>
+        <li><a class="chip" href="#ep-pratica">Na prática</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<!-- 1.1 Características gerais -->
+<section class="section" id="ep-caracteristicas" aria-labelledby="ep-car-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.1 · Características gerais</p>
+      <h2 id="ep-car-title">O que faz um tecido ser "epitelial"?</h2>
+      <p class="lead">Sete características aparecem em praticamente todo epitélio. Se você memorizar estas, consegue justificar quase tudo o que vê na lâmina e na clínica.</p>
+    </header>
+
+    <ul class="feature-grid">
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-grid"/></svg></span>
+        <h3>Células justapostas</h3>
+        <p>As células ficam encostadas umas nas outras, com <strong>pouquíssima matriz extracelular</strong> (o material que fica entre as células) e unidas por junções.</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-novessel"/></svg></span>
+        <h3>Avascular</h3>
+        <p><strong>Avascular</strong> significa sem vasos sanguíneos próprios. Os vasos ficam no tecido conjuntivo logo abaixo. O epitélio pode, porém, ter terminações nervosas.</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-diffuse"/></svg></span>
+        <h3>Nutrição por difusão</h3>
+        <p>Oxigênio e nutrientes saem dos capilares do conjuntivo e chegam às células por <strong>difusão</strong> (passagem do local mais concentrado para o menos concentrado) através da membrana basal.</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-polar"/></svg></span>
+        <h3>Polaridade</h3>
+        <p>Cada célula tem "lados" com funções diferentes: o <strong>polo apical</strong> (voltado para a superfície livre ou para a luz de um órgão), as faces <strong>laterais</strong> (junções) e o <strong>polo basal</strong> (apoiado na membrana basal).</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-bm"/></svg></span>
+        <h3>Membrana basal</h3>
+        <p>Camada fina de matriz extracelular que separa o epitélio do conjuntivo. Dá apoio, funciona como filtro e orienta as células durante a regeneração.</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-renew"/></svg></span>
+        <h3>Alta regeneração</h3>
+        <p>Muitos epitélios se renovam continuamente a partir de células-tronco: na camada basal da epiderme, nas criptas do intestino. Por isso feridas superficiais fecham bem.</p>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+        <h3>Superfície livre</h3>
+        <p>O epitélio de revestimento sempre tem uma face voltada para o meio externo ou para uma cavidade. É isso que o torna a primeira barreira — e a primeira porta de entrada.</p>
+      </article></li>
+    </ul>
+
+    <!-- Figura interativa 1: anatomia de um epitélio -->
+    <div class="hs-wrap reveal" data-hotspots="anatomia">
+      <figure class="hs-figure">
+        <div class="hs-stage">
+          <svg viewBox="0 0 600 360" role="img" aria-labelledby="fig-anat-t fig-anat-d">
+            <title id="fig-anat-t">Esquema de um epitélio simples colunar sobre o tecido conjuntivo</title>
+            <desc id="fig-anat-d">Seis células altas lado a lado com microvilos no topo, núcleos ovais perto da base e junções entre elas. Abaixo, uma linha escura (membrana basal) e uma faixa rosada de tecido conjuntivo com fibras, fibroblastos e um capilar com hemácias.</desc>
+            <defs>
+              <pattern id="pat-mv-anat" width="9" height="12" patternUnits="userSpaceOnUse"><line x1="4.5" y1="0" x2="4.5" y2="12" class="sv-mv"/></pattern>
+            </defs>
+            <rect class="sv-lumen" width="600" height="360"/>
+            <text class="sv-text" x="16" y="34">Luz (lúmen)</text>
+            <rect x="0" y="58" width="600" height="12" fill="url(#pat-mv-anat)"/>
+            <g>
+              <rect class="sv-cell" x="1" y="70" width="98" height="160" rx="4"/>
+              <rect class="sv-cell" x="101" y="70" width="98" height="160" rx="4"/>
+              <rect class="sv-cell" x="201" y="70" width="98" height="160" rx="4"/>
+              <rect class="sv-cell" x="301" y="70" width="98" height="160" rx="4"/>
+              <rect class="sv-cell" x="401" y="70" width="98" height="160" rx="4"/>
+              <rect class="sv-cell" x="501" y="70" width="98" height="160" rx="4"/>
+            </g>
+            <g>
+              <ellipse class="sv-nuc" cx="50" cy="190" rx="15" ry="25"/>
+              <ellipse class="sv-nuc" cx="150" cy="190" rx="15" ry="25"/>
+              <ellipse class="sv-nuc" cx="250" cy="190" rx="15" ry="25"/>
+              <ellipse class="sv-nuc" cx="350" cy="190" rx="15" ry="25"/>
+              <ellipse class="sv-nuc" cx="450" cy="190" rx="15" ry="25"/>
+              <ellipse class="sv-nuc" cx="550" cy="190" rx="15" ry="25"/>
+            </g>
+            <g>
+              <rect class="sv-plaque" x="97.5" y="72" width="5" height="16" rx="2"/>
+              <rect class="sv-plaque" x="197.5" y="72" width="5" height="16" rx="2"/>
+              <rect class="sv-plaque" x="297.5" y="72" width="5" height="16" rx="2"/>
+              <rect class="sv-plaque" x="397.5" y="72" width="5" height="16" rx="2"/>
+              <rect class="sv-plaque" x="497.5" y="72" width="5" height="16" rx="2"/>
+              <circle class="sv-plaque" cx="100" cy="125" r="3"/><circle class="sv-plaque" cx="100" cy="160" r="3"/>
+              <circle class="sv-plaque" cx="200" cy="125" r="3"/><circle class="sv-plaque" cx="200" cy="160" r="3"/>
+              <circle class="sv-plaque" cx="300" cy="125" r="3"/><circle class="sv-plaque" cx="300" cy="160" r="3"/>
+              <circle class="sv-plaque" cx="400" cy="125" r="3"/><circle class="sv-plaque" cx="400" cy="160" r="3"/>
+              <circle class="sv-plaque" cx="500" cy="125" r="3"/><circle class="sv-plaque" cx="500" cy="160" r="3"/>
+            </g>
+            <rect class="sv-bm" x="0" y="230" width="600" height="6"/>
+            <rect class="sv-ct" x="0" y="236" width="600" height="124"/>
+            <path class="sv-fiber" d="M0 262 C 80 250, 140 280, 230 262 S 380 250, 600 268"/>
+            <path class="sv-fiber" d="M0 332 C 90 318, 170 346, 250 330"/>
+            <path class="sv-fiber" d="M360 338 C 430 322, 520 352, 600 332"/>
+            <path class="sv-fiber" d="M410 285 C 470 305, 520 282, 600 300"/>
+            <ellipse class="sv-fibroblast" cx="140" cy="292" rx="20" ry="4" transform="rotate(-12 140 292)"/>
+            <ellipse class="sv-fibroblast" cx="470" cy="318" rx="20" ry="4" transform="rotate(10 470 318)"/>
+            <ellipse class="sv-fibroblast" cx="215" cy="347" rx="16" ry="3.5"/>
+            <circle class="sv-vessel" cx="300" cy="298" r="26"/>
+            <ellipse class="sv-rbc" cx="292" cy="291" rx="8" ry="4.5"/>
+            <ellipse class="sv-rbc" cx="309" cy="305" rx="8" ry="4.5"/>
+          </svg>
+        </div>
+        <figcaption>Clique (ou use Tab + Enter) nos marcadores numerados para explorar. Esquema didático, fora de escala.</figcaption>
+        <ul class="hs-list" aria-label="Estruturas da figura"></ul>
+        <noscript><p>Ative o JavaScript para usar os marcadores interativos.</p></noscript>
+      </figure>
+      <div class="hs-panel" aria-live="polite">
+        <div class="hs-empty">
+          <svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>
+          <p><strong>Escolha uma estrutura.</strong> As explicações aparecem aqui, sempre em três partes: o que é, como reconhecer na lâmina e por que importa na prática.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Um tecido formado por <strong>células unidas, apoiadas numa membrana basal</strong>, sem vasos próprios, que reveste superfícies ou forma glândulas.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Procure uma <strong>fileira (ou várias) de núcleos bem organizados na borda de uma superfície</strong>, sem espaço entre as células e sem vasos no meio. Logo abaixo há conjuntivo, com fibras rosadas e vasos.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa que <strong>uma lesão que atinge só o epitélio não sangra</strong> — sangramento indica que o conjuntivo (onde estão os vasos) foi alcançado. Isso ajuda a descrever a profundidade de uma ferida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.2 Como ler a lâmina -->
+<section class="section section--alt" id="ep-lamina" aria-labelledby="ep-lam-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.2 · Antes da galeria</p>
+      <h2 id="ep-lam-title">Como ler uma lâmina de epitélio</h2>
+      <p class="lead">Quase todas as lâminas deste material estão coradas em <strong><abbr title="Hematoxilina e eosina">H&amp;E</abbr></strong>: a <span class="term">hematoxilina</span> cora em roxo-azulado as estruturas ácidas, como o núcleo (<em>basofilia</em>); a <span class="term">eosina</span> cora em rosa as estruturas básicas, como o citoplasma e as fibras colágenas (<em>eosinofilia</em>).</p>
+    </header>
+    <ol class="steps">
+      <li class="reveal"><strong>Ache a superfície livre</strong>Localize a borda do tecido voltada para o "vazio": a luz de um órgão, a superfície da pele ou de uma cavidade.</li>
+      <li class="reveal"><strong>Ache a membrana basal</strong>É o limite entre o epitélio e o conjuntivo. No H&amp;E nem sempre aparece nítida; colorações como o <abbr title="Ácido periódico de Schiff">PAS</abbr> a destacam.</li>
+      <li class="reveal"><strong>Conte as camadas</strong>Uma camada = <em>simples</em>. Várias = <em>estratificado</em>. Núcleos em alturas diferentes, mas todas as células tocando a membrana basal = <em>pseudoestratificado</em>.</li>
+      <li class="reveal"><strong>Olhe a camada de cima</strong>O nome vem da forma das células <em>da superfície</em>: achatadas (pavimentoso), tão altas quanto largas (cúbico) ou mais altas que largas (colunar).</li>
+      <li class="reveal"><strong>Procure especializações</strong>Cílios, microvilos (borda em escova), células caliciformes, queratina. Elas confirmam o tipo e sugerem a função.</li>
+    </ol>
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Uma rotina de observação em cinco passos. A <strong>forma do núcleo acompanha a forma da célula</strong>: achatado, redondo ou alongado — é a pista mais rápida.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Comece no menor aumento para achar a superfície; depois aumente para contar camadas. Cortes oblíquos podem "empilhar" células e enganar: confira em mais de um campo.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa entender a linguagem de laudos de biópsia e citologia (como o Papanicolau), que descrevem justamente o tipo de epitélio e se as células mudaram de forma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.3 Funções -->
+<section class="section" id="ep-funcoes" aria-labelledby="ep-fun-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.3 · Funções</p>
+      <h2 id="ep-fun-title">Cinco funções, uma lógica: a forma segue a função</h2>
+      <p class="lead">Epitélios finos facilitam trocas; espessos protegem; altos absorvem e secretam. Use essa relação para "adivinhar" o tipo de epitélio de um órgão.</p>
+    </header>
+    <ul class="feature-grid">
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-layers"/></svg></span>
+        <h3>Revestimento</h3>
+        <p>Cobre superfícies externas e internas, delimitando o organismo e as cavidades.</p>
+        <span class="ex"><strong>Ex.:</strong> endotélio dos vasos, epiderme.</span>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-absorb"/></svg></span>
+        <h3>Absorção</h3>
+        <p>Transporta substâncias da luz para o sangue. Células altas e microvilos aumentam a superfície.</p>
+        <span class="ex"><strong>Ex.:</strong> intestino delgado, túbulos renais.</span>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-drop"/></svg></span>
+        <h3>Secreção</h3>
+        <p>Produz e libera substâncias: muco, enzimas, hormônios, suor.</p>
+        <span class="ex"><strong>Ex.:</strong> células caliciformes, glândulas salivares, tireoide.</span>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+        <h3>Proteção</h3>
+        <p>Resiste a atrito, desidratação e micro-organismos. Muitas camadas e queratina reforçam a barreira.</p>
+        <span class="ex"><strong>Ex.:</strong> pele, mucosa oral, esôfago.</span>
+      </article></li>
+      <li class="reveal"><article class="feature">
+        <span class="feature-ico" aria-hidden="true"><svg class="icon"><use href="#i-eye"/></svg></span>
+        <h3>Sensorial</h3>
+        <p><strong>Neuroepitélio</strong>: epitélio com células especializadas em captar estímulos.</p>
+        <span class="ex"><strong>Ex.:</strong> calículos gustativos, epitélio olfatório, células ciliadas da orelha interna.</span>
+      </article></li>
+    </ul>
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Cada função exige uma "arquitetura": <strong>poucas camadas para trocar</strong>, <strong>muitas camadas para proteger</strong>, <strong>células altas e cheias de organelas para absorver e secretar</strong>.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Células secretoras de muco parecem "vazias" ou claras no H&amp;E, porque o muco se dissolve no preparo. Células que absorvem mostram uma faixa rosa fina no topo (microvilos).</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa reconhecer que a <strong>via de administração depende de um epitélio</strong>: a via oral depende da absorção intestinal, a sublingual de uma mucosa fina e muito vascularizada por baixo, a tópica da barreira da pele.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.4 Classificação e galeria -->
+<section class="section section--alt" id="ep-classificacao" aria-labelledby="ep-cla-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.4 · Epitélio de revestimento</p>
+      <h2 id="ep-cla-title">Classificação e galeria de lâminas</h2>
+      <p class="lead">O nome tem duas partes: <strong>número de camadas</strong> (simples, estratificado, pseudoestratificado) + <strong>forma das células da superfície</strong> (pavimentoso, cúbico, colunar). Em cada cartão, alterne entre a <strong>lâmina real</strong> e o <strong>esquema</strong>.</p>
+    </header>
+
+    <div class="gallery-toolbar" role="group" aria-label="Filtrar galeria por número de camadas">
+      <span class="label" aria-hidden="true">Filtrar:</span>
+      <button class="chip" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+      <button class="chip" type="button" data-filter="simples" aria-pressed="false">Simples</button>
+      <button class="chip" type="button" data-filter="estratificado" aria-pressed="false">Estratificados</button>
+      <button class="chip" type="button" data-filter="pseudo" aria-pressed="false">Pseudoestratificado</button>
+    </div>
+    <p class="visually-hidden" id="gallery-status" aria-live="polite"></p>
+
+    <div class="gallery" id="galeria-epitelial">
+
+      <!-- Simples pavimentoso -->
+      <article class="tissue-card reveal" data-group="simples" id="tipo-simples-pavimentoso">
+        <div class="tissue-card__head"><span class="tag">Simples</span><h3>Simples pavimentoso</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio simples pavimentoso">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio simples pavimentoso">
+              <span class="img-placeholder"><strong>Imagem: epitélio simples pavimentoso (H&amp;E) — ex.: mesotélio ou parede alveolar</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-simples-pavimentoso.jpg</code></span>
+              <img src="assets/img/epitelio-simples-pavimentoso.jpg" alt="Lâmina em H&amp;E mostrando uma única camada de células muito achatadas, com núcleos alongados que fazem saliência na superfície." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Uma camada de células achatadas; os núcleos "abaulam" a superfície. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="simples-pavimentoso" role="img" aria-label="Esquema: uma única camada de células achatadas sobre a membrana basal, com núcleos alongados."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Endotélio (revestimento interno dos vasos e do coração), mesotélio (pleura, pericárdio, peritônio), alvéolos pulmonares, folheto parietal da cápsula de Bowman.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Linha fina de citoplasma rosado com núcleos achatados e espaçados, às vezes difícil de ver sem aumento maior.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Difusão e trocas (gases, filtração), superfície lisa que reduz atrito.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>Na punção venosa, a agulha entra numa luz revestida por endotélio. Lesão do endotélio está ligada à inflamação da veia (flebite) e à formação de trombos.</p></div>
+      </article>
+
+      <!-- Simples cúbico -->
+      <article class="tissue-card reveal" data-group="simples" id="tipo-simples-cubico">
+        <div class="tissue-card__head"><span class="tag">Simples</span><h3>Simples cúbico</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio simples cúbico">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio simples cúbico">
+              <span class="img-placeholder"><strong>Imagem: epitélio simples cúbico (H&amp;E) — ex.: túbulos renais ou folículos da tireoide</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-simples-cubico.jpg</code></span>
+              <img src="assets/img/epitelio-simples-cubico.jpg" alt="Lâmina em H&amp;E com túbulos revestidos por uma camada de células quadradas, cada uma com núcleo redondo e central." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Células tão altas quanto largas, com núcleo redondo no centro. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="simples-cubico" role="img" aria-label="Esquema: uma camada de células quadradas com núcleos redondos centrais."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Túbulos renais, folículos da tireoide, ductos de muitas glândulas, superfície do ovário.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Fileira de "quadradinhos" ao redor de uma luz, núcleos redondos alinhados no meio da célula.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Secreção e absorção.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>Os túbulos renais reabsorvem água e solutos; lesões desse epitélio ajudam a entender alterações de volume urinário acompanhadas no balanço hídrico.</p></div>
+      </article>
+
+      <!-- Simples colunar -->
+      <article class="tissue-card reveal" data-group="simples" id="tipo-simples-colunar">
+        <div class="tissue-card__head"><span class="tag">Simples</span><h3>Simples colunar (prismático)</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio simples colunar">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio simples colunar">
+              <span class="img-placeholder"><strong>Imagem: epitélio simples colunar com células caliciformes (H&amp;E) — ex.: intestino delgado</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-simples-colunar.jpg</code></span>
+              <img src="assets/img/epitelio-simples-colunar.jpg" alt="Lâmina em H&amp;E de vilosidade intestinal revestida por células altas com núcleos alongados próximos à base, faixa rosada de microvilos no topo e células caliciformes claras." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Células altas, núcleos alongados perto da base; no intestino, borda em escova e caliciformes. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="simples-colunar" role="img" aria-label="Esquema: uma camada de células altas com microvilos no topo, núcleos alongados perto da base e uma célula caliciforme clara no meio."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Estômago, intestinos delgado e grosso, vesícula biliar, endocérvice. Com cílios: tuba uterina.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Células mais altas que largas; núcleos ovais alinhados numa só altura, perto da base. Podem aparecer microvilos (borda em escova) e caliciformes.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Absorção, secreção (muco, enzimas) e proteção.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>É o epitélio que absorve a dieta e os medicamentos orais. Quando ele é lesado (infecções, quimioterapia), surgem diarreia e prejuízo da absorção.</p></div>
+      </article>
+
+      <!-- Pseudoestratificado -->
+      <article class="tissue-card reveal" data-group="pseudo" id="tipo-pseudoestratificado">
+        <div class="tissue-card__head"><span class="tag tag--pseudo">Pseudoestratificado</span><h3>Pseudoestratificado colunar ciliado</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio pseudoestratificado">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio pseudoestratificado colunar ciliado">
+              <span class="img-placeholder"><strong>Imagem: epitélio pseudoestratificado colunar ciliado com caliciformes (H&amp;E) — ex.: traqueia</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-pseudoestratificado.jpg</code></span>
+              <img src="assets/img/epitelio-pseudoestratificado.jpg" alt="Lâmina em H&amp;E da traqueia: núcleos em várias alturas dando falsa impressão de camadas, cílios finos na superfície e células caliciformes claras." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Núcleos em alturas diferentes, mas todas as células tocam a membrana basal. Cílios no topo. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="pseudoestratificado" role="img" aria-label="Esquema: células altas e células basais curtas, todas apoiadas na membrana basal, com núcleos em alturas variadas e cílios no topo."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Cavidade nasal, traqueia e brônquios (o chamado epitélio respiratório).</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Parece ter várias camadas por causa dos núcleos em alturas diferentes, mas é uma só. Procure cílios (franja fina no topo) e caliciformes.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Proteção e transporte mucociliar: o muco prende partículas e os cílios o empurram em direção à faringe.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>A fumaça do cigarro prejudica o batimento ciliar e aumenta o muco — base da tosse do fumante e do acúmulo de secreções.</p></div>
+      </article>
+
+      <!-- Estratificado pavimentoso queratinizado -->
+      <article class="tissue-card reveal" data-group="estratificado" id="tipo-estratificado-queratinizado">
+        <div class="tissue-card__head"><span class="tag tag--estr">Estratificado</span><h3>Estratificado pavimentoso queratinizado</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio estratificado pavimentoso queratinizado">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio estratificado pavimentoso queratinizado">
+              <span class="img-placeholder"><strong>Imagem: pele (epiderme) em H&amp;E — epitélio estratificado pavimentoso queratinizado</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-estratificado-queratinizado.jpg</code></span>
+              <img src="assets/img/epitelio-estratificado-queratinizado.jpg" alt="Lâmina em H&amp;E da pele: várias camadas de células que se achatam em direção à superfície, coberta por uma faixa rosa sem núcleos (camada córnea de queratina)." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Muitas camadas; na superfície, queratina rosa e sem núcleos (camada córnea). <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="estratificado-queratinizado" role="img" aria-label="Esquema: camada basal de células cúbicas, várias camadas poligonais, células achatadas com grânulos e, no topo, lâminas de queratina sem núcleo."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Epiderme (pele).</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Células da base cúbicas; acima, poligonais; na superfície, achatadas e cobertas por queratina eosinofílica (rosa) sem núcleos.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Proteção contra atrito, desidratação e micro-organismos.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>Veja as camadas da pele em detalhe na figura interativa <a href="#ep-pele">"A pele em camadas"</a>.</p></div>
+      </article>
+
+      <!-- Estratificado pavimentoso não queratinizado -->
+      <article class="tissue-card reveal" data-group="estratificado" id="tipo-estratificado-nao-queratinizado">
+        <div class="tissue-card__head"><span class="tag tag--estr">Estratificado</span><h3>Estratificado pavimentoso não queratinizado</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio estratificado pavimentoso não queratinizado">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio estratificado pavimentoso não queratinizado">
+              <span class="img-placeholder"><strong>Imagem: epitélio estratificado pavimentoso não queratinizado (H&amp;E) — ex.: esôfago ou mucosa oral</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-estratificado-nao-queratinizado.jpg</code></span>
+              <img src="assets/img/epitelio-estratificado-nao-queratinizado.jpg" alt="Lâmina em H&amp;E do esôfago: epitélio espesso de muitas camadas em que as células superficiais são achatadas mas ainda têm núcleo." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Muitas camadas; as células da superfície continuam com núcleo. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="estratificado-nao-queratinizado" role="img" aria-label="Esquema: várias camadas de células, a superfície formada por células achatadas que ainda têm núcleo, sem camada de queratina."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Boca (grande parte da mucosa), esôfago, vagina, ectocérvice, córnea.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Semelhante à pele, mas <strong>sem camada córnea</strong>: as células superficiais achatadas mantêm núcleo.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Proteção contra atrito em superfícies que precisam permanecer úmidas.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>Por se renovar rápido, a mucosa oral é afetada por quimioterapia e radioterapia (mucosite). Inspecionar a boca faz parte da avaliação desses pacientes.</p></div>
+      </article>
+
+      <!-- Estratificado cúbico -->
+      <article class="tissue-card reveal" data-group="estratificado" id="tipo-estratificado-cubico">
+        <div class="tissue-card__head"><span class="tag tag--estr">Estratificado</span><h3>Estratificado cúbico</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio estratificado cúbico">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio estratificado cúbico">
+              <span class="img-placeholder"><strong>Imagem: epitélio estratificado cúbico (H&amp;E) — ex.: ducto de glândula sudorípara</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-estratificado-cubico.jpg</code></span>
+              <img src="assets/img/epitelio-estratificado-cubico.jpg" alt="Lâmina em H&amp;E de um ducto de glândula sudorípara revestido por duas camadas de células cúbicas com núcleos redondos." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Geralmente duas camadas de células cúbicas ao redor de uma luz. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="estratificado-cubico" role="img" aria-label="Esquema: duas camadas de células cúbicas com núcleos redondos."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Ductos de glândulas sudoríparas e ductos maiores de algumas glândulas exócrinas. É pouco comum.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Anel de duas camadas de núcleos redondos ao redor de uma luz pequena, em geral mais corado que a porção secretora vizinha.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Proteção e condução da secreção.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>Os ductos sudoríparos atravessam a pele até a superfície: o suor, importante na termorregulação, chega à pele por esse caminho.</p></div>
+      </article>
+
+      <!-- Transição / urotélio -->
+      <article class="tissue-card reveal" data-group="estratificado" id="tipo-transicao">
+        <div class="tissue-card__head"><span class="tag tag--estr">Estratificado</span><h3>De transição (urotélio)</h3></div>
+        <div class="view-switch" role="group" aria-label="Visualização do epitélio de transição">
+          <button type="button" data-show="foto" aria-pressed="true">Lâmina</button>
+          <button type="button" data-show="esquema" aria-pressed="false">Esquema</button>
+        </div>
+        <div class="tissue-media">
+          <figure data-view="foto">
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: epitélio de transição">
+              <span class="img-placeholder"><strong>Imagem: epitélio de transição / urotélio (H&amp;E) — ex.: bexiga urinária</strong><span>Arquivo esperado:</span><code>assets/img/epitelio-transicao.jpg</code></span>
+              <img src="assets/img/epitelio-transicao.jpg" alt="Lâmina em H&amp;E da bexiga: várias camadas de células, com células superficiais grandes e arredondadas em forma de cúpula, algumas com dois núcleos." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Células superficiais grandes e abauladas ("em guarda-chuva"), às vezes binucleadas. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+          <div data-view="esquema" hidden>
+            <div class="schematic" data-schematic="transicao" role="img" aria-label="Esquema: camadas de células pequenas na base e, na superfície, células grandes em forma de cúpula, uma delas com dois núcleos."></div>
+            <p class="schematic-cap">Esquema simplificado (gerado por código).</p>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-onde">Onde ocorre</dt><dd>Pelve renal, ureteres, bexiga e parte proximal da uretra.</dd></div>
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Muda com a distensão: bexiga vazia → mais camadas e células superficiais arredondadas; bexiga cheia → epitélio mais fino e células achatadas.</dd></div>
+          <div><dt class="f-funcao">Função</dt><dd>Permite a distensão do órgão e forma uma barreira contra a urina.</dd></div>
+        </dl>
+        <div class="mini-pratica"><span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span><p>A sonda vesical passa sobre essa mucosa: atrito pode lesá-la, e a própria sonda é uma via para bactérias chegarem à bexiga.</p></div>
+      </article>
+    </div>
+
+    <p class="note reveal" style="margin-top:var(--sp-5)">
+      <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+      <span><strong>E o estratificado colunar?</strong> Existe, mas é raro (por exemplo, na conjuntiva do olho e em segmentos da uretra masculina). Por ser pouco cobrado e pouco relevante na prática, não tem cartão próprio aqui.</span>
+    </p>
+
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Um sistema de nomes que descreve <strong>quantas camadas</strong> e <strong>que forma tem a camada de cima</strong>. Especializações (cílios, queratina) completam o nome.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Nunca classifique pela camada basal: num estratificado pavimentoso, as células da base são cúbicas — e mesmo assim ele é "pavimentoso", porque a superfície é achatada.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa entender a <strong>metaplasia</strong> — a troca de um epitélio adulto por outro diante de uma agressão. Exemplo: no fumante, o epitélio ciliado dos brônquios pode ser substituído por estratificado pavimentoso, mais resistente, mas sem cílios para limpar as vias aéreas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.5 Pele em camadas -->
+<section class="section" id="ep-pele" aria-labelledby="ep-pele-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.5 · Figura interativa</p>
+      <h2 id="ep-pele-title">A pele em camadas: do estrato córneo ao músculo</h2>
+      <p class="lead">A <strong>epiderme</strong> é epitélio; a <strong>derme</strong> e a <strong>hipoderme</strong> (tecido subcutâneo) são conjuntivo. Explore as camadas — elas são a base para entender injeções, feridas, queimaduras e lesões por pressão.</p>
+    </header>
+
+    <div class="hs-wrap reveal" data-hotspots="pele">
+      <figure class="hs-figure">
+        <div class="hs-stage">
+          <svg viewBox="0 0 600 540" role="img" aria-labelledby="fig-pele-t fig-pele-d">
+            <title id="fig-pele-t">Esquema em corte da pele e dos tecidos abaixo dela</title>
+            <desc id="fig-pele-d">De cima para baixo: camada córnea rosa, camada granulosa, várias camadas espinhosas, camada basal, membrana basal, derme papilar com alças de capilares, derme reticular com fibras grossas, um vaso, um folículo piloso com glândula sebácea, uma glândula sudorípara enovelada com ducto até a superfície, hipoderme com células de gordura e, no fundo, fáscia e músculo.</desc>
+            <defs>
+              <pattern id="pat-gran" x="0" y="52" width="50" height="18" patternUnits="userSpaceOnUse">
+                <rect class="sv-cell-alt" x="1" y="1" width="48" height="16" rx="4"/>
+                <ellipse class="sv-nuc" cx="25" cy="9" rx="9" ry="3"/>
+                <circle class="sv-gran" cx="9" cy="7" r="1.8"/><circle class="sv-gran" cx="40" cy="11" r="1.8"/><circle class="sv-gran" cx="14" cy="12" r="1.5"/><circle class="sv-gran" cx="36" cy="6" r="1.4"/>
+              </pattern>
+              <pattern id="pat-spin" x="0" y="70" width="40" height="40" patternUnits="userSpaceOnUse">
+                <rect class="sv-cell" x="1" y="1" width="38" height="18" rx="5"/>
+                <circle class="sv-nuc" cx="20" cy="10" r="4.5"/>
+                <rect class="sv-cell" x="-19" y="21" width="38" height="18" rx="5"/>
+                <rect class="sv-cell" x="21" y="21" width="38" height="18" rx="5"/>
+                <circle class="sv-nuc" cx="0" cy="30" r="4.5"/><circle class="sv-nuc" cx="40" cy="30" r="4.5"/>
+              </pattern>
+              <pattern id="pat-basal" x="0" y="150" width="22" height="22" patternUnits="userSpaceOnUse">
+                <rect class="sv-cell-alt" x="1" y="1" width="20" height="20" rx="3"/>
+                <ellipse class="sv-nuc-dark" cx="11" cy="12" rx="4" ry="6.5"/>
+              </pattern>
+              <pattern id="pat-fat" x="0" y="382" width="48" height="48" patternUnits="userSpaceOnUse">
+                <circle class="sv-fat" cx="24" cy="24" r="22"/>
+                <ellipse class="sv-nuc" cx="5" cy="30" rx="2" ry="4"/>
+              </pattern>
+              <pattern id="pat-muscle" x="0" y="0" width="6" height="10" patternUnits="userSpaceOnUse">
+                <line x1="3" y1="0" x2="3" y2="10" class="sv-striation"/>
+              </pattern>
+            </defs>
+            <rect class="sv-lumen" width="600" height="540"/>
+            <!-- epiderme -->
+            <rect class="sv-ker" x="0" y="18" width="600" height="34"/>
+            <path class="sv-mv" d="M0 26H600M0 34H600M0 42H600" opacity=".5"/>
+            <rect x="0" y="52" width="600" height="18" fill="url(#pat-gran)"/>
+            <rect x="0" y="70" width="600" height="80" fill="url(#pat-spin)"/>
+            <rect x="0" y="150" width="600" height="22" fill="url(#pat-basal)"/>
+            <rect class="sv-bm" x="0" y="172" width="600" height="4"/>
+            <!-- derme papilar -->
+            <rect class="sv-ct" x="0" y="176" width="600" height="56"/>
+            <path class="sv-fiber" d="M0 200 C 60 190, 120 214, 200 202 S 330 192, 400 206"/>
+            <path class="sv-fiber" d="M470 214 C 520 200, 560 218, 600 206"/>
+            <path class="sv-vessel-line" d="M36 232V198a8 8 0 0 1 16 0V232"/>
+            <path class="sv-vessel-line" d="M196 232V198a8 8 0 0 1 16 0V232"/>
+            <path class="sv-vessel-line" d="M326 232V198a8 8 0 0 1 16 0V232"/>
+            <path class="sv-vessel-line" d="M536 232V198a8 8 0 0 1 16 0V232"/>
+            <!-- derme reticular -->
+            <rect class="sv-ct-dense" x="0" y="232" width="600" height="150"/>
+            <path class="sv-fiber-thick" d="M0 252 C 70 240, 120 270, 200 255 S 300 240, 380 262"/>
+            <path class="sv-fiber-thick" d="M10 300 C 60 285, 90 320, 170 300"/>
+            <path class="sv-fiber-thick" d="M330 290 C 360 270, 380 320, 400 300"/>
+            <path class="sv-fiber-thick" d="M180 350 C 230 330, 260 365, 330 352"/>
+            <path class="sv-fiber-thick" d="M500 300 C 540 285, 560 320, 600 305"/>
+            <path class="sv-fiber-thick" d="M470 350 C 520 335, 560 365, 600 352"/>
+            <path class="sv-fiber-thick" d="M230 285 C 250 315, 210 330, 240 345"/>
+            <ellipse class="sv-vessel" cx="290" cy="330" rx="22" ry="14"/>
+            <ellipse class="sv-rbc" cx="283" cy="327" rx="6" ry="3.5"/><ellipse class="sv-rbc" cx="298" cy="334" rx="6" ry="3.5"/>
+            <!-- hipoderme -->
+            <rect class="sv-ct" x="0" y="382" width="600" height="98"/>
+            <rect x="0" y="382" width="600" height="98" fill="url(#pat-fat)"/>
+            <!-- fáscia e músculo -->
+            <rect class="sv-bm" x="0" y="480" width="600" height="5" opacity=".55"/>
+            <rect class="sv-muscle" x="0" y="485" width="600" height="55"/>
+            <rect x="0" y="485" width="600" height="55" fill="url(#pat-muscle)"/>
+            <path class="sv-mv" d="M0 503H600M0 521H600"/>
+            <!-- folículo piloso e glândula sebácea -->
+            <rect class="sv-cell-alt" x="408" y="150" width="48" height="228" rx="18"/>
+            <ellipse class="sv-cell-alt" cx="432" cy="378" rx="30" ry="22"/>
+            <ellipse class="sv-ct" cx="432" cy="388" rx="10" ry="8"/>
+            <g>
+              <circle class="sv-goblet" cx="476" cy="230" r="14"/><circle class="sv-goblet" cx="497" cy="243" r="14"/>
+              <circle class="sv-goblet" cx="478" cy="257" r="13"/><circle class="sv-goblet" cx="498" cy="222" r="12"/>
+              <circle class="sv-nuc" cx="476" cy="230" r="3"/><circle class="sv-nuc" cx="497" cy="243" r="3"/>
+              <circle class="sv-nuc" cx="478" cy="257" r="3"/><circle class="sv-nuc" cx="498" cy="222" r="3"/>
+            </g>
+            <rect class="sv-hair" x="426" y="0" width="12" height="372" rx="6"/>
+            <!-- glândula sudorípara + ducto -->
+            <path d="M152 352 C 138 300, 170 270, 150 232 S 166 190, 150 172 C 140 150, 162 128, 148 106 S 162 60, 150 18" fill="none" stroke="var(--sv-nuc)" stroke-width="3" stroke-linecap="round"/>
+            <g>
+              <circle class="sv-cell" cx="132" cy="362" r="12"/><circle class="sv-cell" cx="154" cy="354" r="12"/>
+              <circle class="sv-cell" cx="172" cy="370" r="12"/><circle class="sv-cell" cx="146" cy="380" r="12"/>
+              <circle class="sv-cell" cx="164" cy="392" r="12"/>
+              <circle class="sv-lumen" cx="132" cy="362" r="4"/><circle class="sv-lumen" cx="154" cy="354" r="4"/>
+              <circle class="sv-lumen" cx="172" cy="370" r="4"/><circle class="sv-lumen" cx="146" cy="380" r="4"/>
+              <circle class="sv-lumen" cx="164" cy="392" r="4"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption>Esquema simplificado, fora de escala (as papilas dérmicas foram "achatadas" para facilitar a leitura). Clique nos marcadores.</figcaption>
+        <ul class="hs-list" aria-label="Estruturas da figura"></ul>
+        <noscript><p>Ative o JavaScript para usar os marcadores interativos.</p></noscript>
+      </figure>
+      <div class="hs-panel" aria-live="polite">
+        <div class="hs-empty">
+          <svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>
+          <p><strong>Comece pelo marcador 1</strong> (camada córnea) e desça até o músculo: você vai percorrer o caminho de uma agulha.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>A epiderme é <strong>estratificada pavimentosa queratinizada</strong>, organizada em camadas (estratos) que representam etapas da vida do queratinócito (a célula principal da epiderme): nasce na camada basal e sobe até virar queratina. Na pele espessa (palmas e plantas) existe ainda um <strong>estrato lúcido</strong>, faixa clara entre o granuloso e o córneo.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>De baixo para cima: <strong>núcleos escuros em fileira</strong> (basal) → <strong>células poligonais</strong> (espinhoso) → <strong>grânulos roxo-escuros</strong> (granuloso) → <strong>faixa rosa sem núcleos</strong> (córneo). Abaixo, a derme rosa com fibras e vasos.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa que cada via parenteral tem um <strong>alvo em uma camada</strong>: a intradérmica deposita na derme, a subcutânea na hipoderme e a intramuscular no músculo. Saber as camadas é saber onde a agulha está.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.6 Epitélio glandular -->
+<section class="section section--alt" id="ep-glandular" aria-labelledby="ep-gla-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.6 · Epitélio glandular</p>
+      <h2 id="ep-gla-title">Glândulas: epitélio que "mergulhou" no conjuntivo</h2>
+      <p class="lead">As glândulas se formam quando células do epitélio de revestimento proliferam e invadem o conjuntivo abaixo. O destino da ligação com a superfície define o tipo.</p>
+    </header>
+
+    <div class="gland-figs">
+      <figure class="reveal">
+        <svg viewBox="0 0 300 260" role="img" aria-labelledby="fig-exo-t">
+          <title id="fig-exo-t">Glândula exócrina: um ducto liga a porção secretora, em forma de ácino, à superfície do epitélio.</title>
+          <defs>
+            <pattern id="pat-surf-a" x="0" y="20" width="25" height="30" patternUnits="userSpaceOnUse">
+              <rect class="sv-cell" x="1" y="1" width="23" height="28" rx="3"/><ellipse class="sv-nuc" cx="12.5" cy="19" rx="4" ry="6"/>
+            </pattern>
+            <pattern id="pat-duct" x="0" y="50" width="14" height="14" patternUnits="userSpaceOnUse">
+              <rect class="sv-cell" x="1" y="1" width="12" height="12" rx="2"/><circle class="sv-nuc" cx="7" cy="7" r="2.6"/>
+            </pattern>
+          </defs>
+          <rect class="sv-lumen" width="300" height="260"/>
+          <rect class="sv-ct" x="0" y="50" width="300" height="210"/>
+          <rect x="0" y="20" width="125" height="30" fill="url(#pat-surf-a)"/>
+          <rect x="175" y="20" width="125" height="30" fill="url(#pat-surf-a)"/>
+          <rect x="125" y="20" width="14" height="140" fill="url(#pat-duct)"/>
+          <rect x="161" y="20" width="14" height="140" fill="url(#pat-duct)"/>
+          <circle class="sv-cell" cx="150" cy="205" r="45"/>
+          <path class="sv-mv" d="M159.2 208.8 191.6 222.2M153.8 214.2 167.2 246.6M146.2 214.2 132.8 246.6M140.8 208.8 108.4 222.2M140.8 201.2 108.4 187.8M146.2 195.8 132.8 163.4M153.8 195.8 167.2 163.4M159.2 201.2 191.6 187.8"/>
+          <circle class="sv-lumen" cx="150" cy="205" r="10"/>
+          <g class="sv-nuc">
+            <circle cx="183" cy="205" r="4.5"/><circle cx="173.3" cy="228.3" r="4.5"/><circle cx="150" cy="238" r="4.5"/><circle cx="126.7" cy="228.3" r="4.5"/>
+            <circle cx="117" cy="205" r="4.5"/><circle cx="126.7" cy="181.7" r="4.5"/><circle cx="150" cy="172" r="4.5"/><circle cx="173.3" cy="181.7" r="4.5"/>
+          </g>
+          <path class="sv-arrow" d="M150 192V30M142 40l8-12 8 12"/>
+          <text class="sv-text-sm" x="184" y="110">ducto</text>
+          <text class="sv-text-sm" x="200" y="200">porção</text>
+          <text class="sv-text-sm" x="200" y="215">secretora</text>
+          <text class="sv-text-sm" x="8" y="14">superfície</text>
+        </svg>
+        <figcaption><strong>Exócrina</strong>Mantém um <strong>ducto</strong> que leva a secreção para uma superfície ou cavidade. Ex.: glândulas salivares, sudoríparas, sebáceas, pâncreas exócrino.</figcaption>
+      </figure>
+      <figure class="reveal">
+        <svg viewBox="0 0 300 260" role="img" aria-labelledby="fig-endo-t">
+          <title id="fig-endo-t">Glândula endócrina: grupos de células sem ducto, cercados por capilares, liberam hormônios no sangue.</title>
+          <defs>
+            <pattern id="pat-surf-b" x="0" y="20" width="25" height="30" patternUnits="userSpaceOnUse">
+              <rect class="sv-cell" x="1" y="1" width="23" height="28" rx="3"/><ellipse class="sv-nuc" cx="12.5" cy="19" rx="4" ry="6"/>
+            </pattern>
+            <pattern id="pat-cord" x="0" y="0" width="18" height="18" patternUnits="userSpaceOnUse">
+              <rect class="sv-cell-alt" x="1" y="1" width="16" height="16" rx="3"/><circle class="sv-nuc" cx="9" cy="9" r="3.2"/>
+            </pattern>
+          </defs>
+          <rect class="sv-lumen" width="300" height="260"/>
+          <rect class="sv-ct" x="0" y="50" width="300" height="210"/>
+          <rect x="0" y="20" width="300" height="30" fill="url(#pat-surf-b)"/>
+          <path class="sv-leader" d="M150 52V96"/>
+          <path d="M141 70l18 14M159 70l-18 14" stroke="var(--eosin)" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="36" y="108" width="90" height="36" rx="6" fill="url(#pat-cord)"/>
+          <rect x="162" y="144" width="108" height="36" rx="6" fill="url(#pat-cord)"/>
+          <rect x="54" y="198" width="90" height="36" rx="6" fill="url(#pat-cord)"/>
+          <ellipse class="sv-vessel" cx="150" cy="126" rx="14" ry="10"/><ellipse class="sv-rbc" cx="150" cy="126" rx="6" ry="3.5"/>
+          <ellipse class="sv-vessel" cx="104" cy="172" rx="14" ry="10"/><ellipse class="sv-rbc" cx="104" cy="172" rx="6" ry="3.5"/>
+          <ellipse class="sv-vessel" cx="200" cy="214" rx="14" ry="10"/><ellipse class="sv-rbc" cx="200" cy="214" rx="6" ry="3.5"/>
+          <ellipse class="sv-vessel" cx="250" cy="112" rx="14" ry="10"/><ellipse class="sv-rbc" cx="250" cy="112" rx="6" ry="3.5"/>
+          <path class="sv-arrow" d="M126 126h8M130 121l5 5-5 5"/>
+          <path class="sv-arrow" d="M200 182v14M195 191l5 6 5-6"/>
+          <text class="sv-text-sm" x="166" y="76">sem ducto</text>
+          <text class="sv-text-sm" x="8" y="252">cordões de células</text>
+          <text class="sv-text-sm" x="222" y="244">capilar</text>
+        </svg>
+        <figcaption><strong>Endócrina</strong>Perde a ligação com a superfície e libera <strong>hormônios no sangue</strong>, por isso fica cercada de capilares. Ex.: tireoide, adeno-hipófise, adrenal, ilhotas do pâncreas.</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="reveal">Como classificar as glândulas exócrinas</h3>
+    <div class="class-grid">
+      <div class="class-box reveal">
+        <h3>Pelo número de células</h3>
+        <dl>
+          <dt>Unicelular</dt><dd>Uma única célula secretora: a <strong>célula caliciforme</strong> (em forma de cálice), que produz muco no intestino e nas vias aéreas.</dd>
+          <dt>Multicelular</dt><dd>Muitas células organizadas em porção secretora + ducto.</dd>
+        </dl>
+      </div>
+      <div class="class-box reveal">
+        <h3>Pela forma</h3>
+        <dl>
+          <dt>Ducto</dt><dd><strong>Simples</strong> (ducto único, sem ramificar) ou <strong>composta</strong> (ducto ramificado).</dd>
+          <dt>Porção secretora</dt><dd><strong>Tubular</strong> (em tubo), <strong>acinosa/alveolar</strong> (em "cacho de uva") ou <strong>tubuloacinosa</strong> (mista).</dd>
+        </dl>
+      </div>
+      <div class="class-box reveal">
+        <h3>Pelo tipo de secreção</h3>
+        <dl>
+          <dt>Serosa</dt><dd>Secreção aquosa, rica em proteínas/enzimas. Células com citoplasma bem corado.</dd>
+          <dt>Mucosa</dt><dd>Secreção viscosa (muco). Células claras, núcleo achatado na base.</dd>
+          <dt>Mista</dt><dd>Possui os dois tipos (ex.: algumas glândulas salivares).</dd>
+        </dl>
+      </div>
+      <div class="class-box reveal">
+        <h3>Pelo modo de liberar</h3>
+        <dl>
+          <dt>Merócrina (écrina)</dt><dd>Libera por exocitose, sem perder parte da célula. É o modo mais comum (ex.: glândulas salivares, sudoríparas écrinas).</dd>
+          <dt>Apócrina</dt><dd>Perde parte do citoplasma apical junto com a secreção (ex.: componente lipídico do leite na glândula mamária).</dd>
+          <dt>Holócrina</dt><dd>A célula inteira se desintegra e vira secreção (ex.: glândula sebácea).</dd>
+        </dl>
+      </div>
+      <div class="class-box reveal">
+        <h3>Glândulas endócrinas</h3>
+        <dl>
+          <dt>Cordonais</dt><dd>Células em cordões entre capilares (ex.: adeno-hipófise, adrenal, ilhotas do pâncreas).</dd>
+          <dt>Foliculares</dt><dd>Células formam folículos que armazenam o produto antes de liberá-lo (ex.: tireoide).</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="gallery" style="margin-top:var(--sp-6)">
+      <article class="tissue-card reveal">
+        <div class="tissue-card__head"><span class="tag">Glândula exócrina</span><h3>Glândula sebácea (holócrina)</h3></div>
+        <div class="tissue-media">
+          <figure>
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: glândula sebácea">
+              <span class="img-placeholder"><strong>Imagem: glândula sebácea junto ao folículo piloso (H&amp;E)</strong><span>Arquivo esperado:</span><code>assets/img/glandula-sebacea.jpg</code></span>
+              <img src="assets/img/glandula-sebacea.jpg" alt="Lâmina em H&amp;E da pele mostrando glândula sebácea: grupos de células grandes de citoplasma claro e espumoso, ao lado de um folículo piloso." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Células grandes e claras (cheias de lipídio), abrindo-se no folículo piloso. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-lamina">Na lâmina</dt><dd>Citoplasma claro e "espumoso" porque os lipídios se dissolvem no preparo; células do centro com núcleos degenerando.</dd></div>
+        </dl>
+      </article>
+      <article class="tissue-card reveal">
+        <div class="tissue-card__head"><span class="tag">Glândula unicelular</span><h3>Células caliciformes</h3></div>
+        <div class="tissue-media">
+          <figure>
+            <button class="photo" type="button" data-lightbox aria-label="Ampliar imagem: células caliciformes">
+              <span class="img-placeholder"><strong>Imagem: células caliciformes no epitélio intestinal (H&amp;E ou PAS)</strong><span>Arquivo esperado:</span><code>assets/img/celulas-caliciformes.jpg</code></span>
+              <img src="assets/img/celulas-caliciformes.jpg" alt="Lâmina do intestino com células em forma de cálice intercaladas entre células colunares; o topo das caliciformes aparece claro no H&amp;E ou magenta no PAS." loading="lazy" decoding="async" width="1200" height="900">
+              <span class="zoom-badge" aria-hidden="true"><svg class="icon"><use href="#i-zoom"/></svg></span>
+            </button>
+            <figcaption>Células em forma de cálice, cheias de muco, entre as células absortivas. <span class="credit">Crédito: pendente — ver IMAGENS.md</span></figcaption>
+          </figure>
+        </div>
+        <dl class="facts">
+          <div><dt class="f-lamina">Na lâmina</dt><dd>No H&amp;E o topo parece vazio/claro; no PAS, o muco fica magenta intenso.</dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Epitélio especializado em <strong>produzir e liberar secreções</strong>. Exócrino = com ducto, para uma superfície. Endócrino = sem ducto, para o sangue.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Ácinos serosos: células rosadas/roxas com núcleo redondo. Ácinos mucosos: células claras com núcleo achatado na base. Endócrinas: cordões ou folículos colados a muitos capilares.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa entender que o <strong>pâncreas tem as duas partes</strong>: a exócrina (enzimas digestivas pelo ducto) e a endócrina (ilhotas, que liberam insulina e glucagon no sangue). Também explica a origem do muco aspirado das vias aéreas: caliciformes e glândulas da mucosa respiratória.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.7 Junções celulares -->
+<section class="section" id="ep-juncoes" aria-labelledby="ep-jun-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.7 · Junções celulares</p>
+      <h2 id="ep-jun-title">O que mantém as células unidas</h2>
+      <p class="lead">Junções são estruturas de membrana que <strong>vedam</strong>, <strong>prendem</strong> ou <strong>comunicam</strong> as células. Elas são vistas ao microscópio eletrônico — por isso aqui usamos um esquema.</p>
+    </header>
+
+    <div class="hs-wrap reveal" data-hotspots="juncoes">
+      <figure class="hs-figure">
+        <div class="hs-stage">
+          <svg viewBox="0 0 600 440" role="img" aria-labelledby="fig-jun-t fig-jun-d">
+            <title id="fig-jun-t">Esquema de duas células epiteliais vizinhas e suas junções</title>
+            <desc id="fig-jun-d">Duas células altas lado a lado. Entre elas, de cima para baixo: pontos de fusão das membranas (junção oclusiva), placas ligadas a filamentos de actina (zônula de adesão), placas densas com filamentos em alça (desmossomo) e pequenos canais atravessando o espaço (junção comunicante). Na base, placas prendem a célula à membrana basal (hemidesmossomo).</desc>
+            <defs>
+              <pattern id="pat-mv-jun" width="9" height="12" patternUnits="userSpaceOnUse"><line x1="4.5" y1="0" x2="4.5" y2="12" class="sv-mv"/></pattern>
+            </defs>
+            <rect class="sv-lumen" width="600" height="440"/>
+            <rect x="130" y="38" width="166" height="12" fill="url(#pat-mv-jun)"/>
+            <rect x="304" y="38" width="166" height="12" fill="url(#pat-mv-jun)"/>
+            <rect class="sv-cell" x="130" y="50" width="166" height="318" rx="8"/>
+            <rect class="sv-cell" x="304" y="50" width="166" height="318" rx="8"/>
+            <ellipse class="sv-nuc" cx="213" cy="290" rx="30" ry="40"/>
+            <ellipse class="sv-nuc" cx="387" cy="290" rx="30" ry="40"/>
+            <!-- oclusiva -->
+            <circle class="sv-plaque" cx="300" cy="64" r="3.6"/><circle class="sv-plaque" cx="300" cy="72" r="3.6"/><circle class="sv-plaque" cx="300" cy="80" r="3.6"/>
+            <!-- adesão -->
+            <rect class="sv-plaque" x="289" y="110" width="7" height="20" rx="2" opacity=".75"/>
+            <rect class="sv-plaque" x="304" y="110" width="7" height="20" rx="2" opacity=".75"/>
+            <path class="sv-actin" d="M289 114H200M289 120H212M289 126H196M311 114H400M311 120H388M311 126H404"/>
+            <!-- desmossomo -->
+            <rect class="sv-plaque" x="286" y="180" width="10" height="30" rx="2"/>
+            <rect class="sv-plaque" x="304" y="180" width="10" height="30" rx="2"/>
+            <path class="sv-mv" d="M296 184h8M296 189h8M296 194h8M296 199h8M296 204h8"/>
+            <path class="sv-if" d="M286 186C240 170 222 214 286 205M286 194C250 202 246 232 268 244"/>
+            <path class="sv-if" d="M314 186C360 170 378 214 314 205M314 194C350 202 354 232 332 244"/>
+            <!-- comunicante -->
+            <rect x="292" y="262" width="16" height="5" rx="1.5" fill="var(--primary)"/>
+            <rect x="292" y="270" width="16" height="5" rx="1.5" fill="var(--primary)"/>
+            <rect x="292" y="278" width="16" height="5" rx="1.5" fill="var(--primary)"/>
+            <!-- hemidesmossomos -->
+            <rect class="sv-plaque" x="165" y="358" width="36" height="8" rx="2"/>
+            <rect class="sv-plaque" x="400" y="358" width="36" height="8" rx="2"/>
+            <path class="sv-if" d="M172 358C162 330 200 322 190 300M194 358C206 336 176 330 182 312"/>
+            <path class="sv-if" d="M407 358C397 330 435 322 425 300M429 358C441 336 411 330 417 312"/>
+            <!-- membrana basal e conjuntivo -->
+            <rect class="sv-bm" x="100" y="368" width="400" height="8"/>
+            <rect class="sv-ct" x="0" y="376" width="600" height="64"/>
+            <path class="sv-fiber" d="M0 400C80 390 160 412 260 398S420 390 600 405"/>
+            <path class="sv-fiber" d="M40 428C120 418 200 436 300 424"/>
+            <!-- linhas-guia -->
+            <path class="sv-leader" d="M470 72H512M130 120H88M470 195H512M130 273H88M165 362H88M500 372H512"/>
+          </svg>
+        </div>
+        <figcaption>Esquema didático baseado em microscopia eletrônica; fora de escala.</figcaption>
+        <ul class="hs-list" aria-label="Estruturas da figura"></ul>
+        <noscript><p>Ative o JavaScript para usar os marcadores interativos.</p></noscript>
+      </figure>
+      <div class="hs-panel" aria-live="polite">
+        <div class="hs-empty">
+          <svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>
+          <p><strong>Siga a ordem de cima para baixo:</strong> oclusão → adesão → desmossomo → comunicante → hemidesmossomo. É a mesma ordem cobrada em provas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div class="block block--oque reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O que é</h3>
+        <p>Três grupos de função: <strong>vedação</strong> (oclusiva), <strong>ancoragem</strong> (zônula de adesão, desmossomo, hemidesmossomo) e <strong>comunicação</strong> (comunicante). O conjunto apical oclusiva + adesão + desmossomo é chamado de <strong>complexo juncional</strong>.</p>
+      </div>
+      <div class="block block--lamina reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-micro"/></svg>Na lâmina</h3>
+        <p>Ao microscópio óptico, as junções individuais não aparecem. No máximo, vê-se a <strong>barra terminal</strong> (ponto escuro no topo, entre células colunares) e as "pontes" do estrato espinhoso, que correspondem a desmossomos.</p>
+      </div>
+      <div class="block block--pratica reveal">
+        <h3><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>NA PRÁTICA</h3>
+        <p>No cuidado de enfermagem, isso significa compreender doenças bolhosas: no <strong>pênfigo</strong>, anticorpos atacam desmossomos e a bolha se forma <em>dentro</em> da epiderme (frágil, rompe fácil); no <strong>penfigoide bolhoso</strong>, o alvo são componentes dos hemidesmossomos e a bolha fica <em>abaixo</em> da epiderme (mais tensa). Em ambos, a pele exige manipulação delicada para evitar descolamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.8 NA PRÁTICA — síntese -->
+<section class="section section--alt" id="ep-pratica" aria-labelledby="ep-pra-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">1.8 · Síntese clínica</p>
+      <h2 id="ep-pra-title">Tecido epitelial NA PRÁTICA</h2>
+      <p class="lead">Dez situações do dia a dia da enfermagem explicadas pela histologia. Cada cartão liga a situação ao tecido que você acabou de estudar.</p>
+    </header>
+
+    <div class="pratica-grid">
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Pele: barreira e porta de entrada</h3>
+        <p>A camada córnea e as junções entre queratinócitos dificultam a entrada de micro-organismos e a perda de água.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que <strong>toda quebra da barreira</strong> — incisão, punção, lesão por umidade ou fricção — é uma possível porta de entrada para infecção. Por isso a avaliação diária da integridade da pele e a técnica asséptica em procedimentos invasivos.</p>
+        <a class="link-tissue" href="#ep-pele">Ver: a pele em camadas →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Curativos e cicatrização</h3>
+        <p>Quando a camada basal e os anexos da pele (folículos, glândulas) são preservados, as células epiteliais migram sobre a ferida e a cobrem: é a <strong>reepitelização</strong>. Essa migração é favorecida por um leito úmido e protegido.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa entender por que a escolha da cobertura busca manter umidade adequada e proteger o tecido novo — e por que remover um curativo aderido sem cuidado pode arrancar o epitélio recém-formado.</p>
+        <a class="link-tissue" href="#tipo-estratificado-queratinizado">Ver: estratificado queratinizado →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Lesão por pressão</h3>
+        <p>O termo "lesão por pressão" substituiu "úlcera por pressão". A classificação em estágios segue a profundidade: pele íntegra com eritema que não embranquece (1), perda parcial da espessura com exposição da derme (2), perda total da pele com gordura visível (3) e exposição de fáscia, músculo, tendão, cartilagem ou osso (4).</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que <strong>conhecer as camadas da pele é pré-requisito</strong> para avaliar, classificar e registrar uma lesão corretamente.</p>
+        <a class="link-tissue" href="#ep-pele">Ver: camadas da pele →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Queimaduras</h3>
+        <p>A profundidade é descrita pelas camadas atingidas: só a epiderme (1º grau); epiderme e parte da derme (2º grau); toda a espessura da pele, podendo chegar ao subcutâneo (3º grau). Quanto mais anexos epiteliais restam na derme, maior a capacidade de reepitelizar.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que a <strong>perda da barreira epitelial</strong> explica por que o paciente queimado fica mais vulnerável à infecção e à perda de líquidos.</p>
+        <a class="link-tissue" href="#ep-pele">Ver: camadas da pele →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Punção venosa e injeções</h3>
+        <p>A agulha atravessa epiderme e derme antes de chegar ao alvo. Na punção venosa, entra na luz de um vaso revestido por <strong>endotélio</strong> (epitélio simples pavimentoso).</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que a antissepsia protege uma barreira que será rompida de propósito, e que o endotélio merece ser preservado: sua lesão está associada à flebite e à formação de trombos.</p>
+        <a class="link-tissue" href="#tipo-simples-pavimentoso">Ver: simples pavimentoso →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Sondagem vesical e o urotélio</h3>
+        <p>Bexiga e parte proximal da uretra são revestidas por urotélio, uma barreira contra a urina; perto do meato, o epitélio da uretra passa a ser estratificado pavimentoso. O cateter pode lesar essa mucosa e serve de via para bactérias.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que <strong>técnica asséptica, inserção delicada e manutenção do sistema fechado</strong> são medidas reconhecidas para prevenir infecção urinária associada ao cateter.</p>
+        <a class="link-tissue" href="#tipo-transicao">Ver: de transição →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Mucosa oral</h3>
+        <p>Grande parte da boca é revestida por estratificado pavimentoso não queratinizado; gengiva e palato duro são queratinizados. É um epitélio de renovação rápida.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa incluir a <strong>inspeção e a higiene da cavidade oral</strong> na avaliação, sobretudo em pacientes em quimioterapia ou radioterapia (risco de mucosite), intubados ou com baixa ingestão.</p>
+        <a class="link-tissue" href="#tipo-estratificado-nao-queratinizado">Ver: não queratinizado →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Epitélio respiratório e tabagismo</h3>
+        <p>O pseudoestratificado ciliado com caliciformes forma a "escada rolante mucociliar". A fumaça prejudica os cílios, aumenta o muco e, com o tempo, pode causar metaplasia escamosa (perda dos cílios).</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa entender a tosse produtiva e o acúmulo de secreções do fumante, fundamentar a orientação sobre cessação do tabagismo e compreender por que, em vias aéreas artificiais (que pulam o nariz), a umidificação do ar é necessária.</p>
+        <a class="link-tissue" href="#tipo-pseudoestratificado">Ver: pseudoestratificado →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Papanicolau e a junção escamocolunar</h3>
+        <p>No colo do útero, o estratificado pavimentoso não queratinizado da <strong>ectocérvice</strong> encontra o simples colunar mucossecretor da <strong>endocérvice</strong>: é a <strong>junção escamocolunar (JEC)</strong>. Ao redor dela fica a <strong>zona de transformação</strong>, onde ocorre metaplasia e onde se origina a maioria das lesões precursoras do câncer do colo. A posição da JEC muda ao longo da vida.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que a <strong>amostra deve incluir células da ectocérvice e da endocérvice</strong>, para representar a JEC — por isso o laudo informa quais epitélios estavam presentes.</p>
+        <a class="link-tissue" href="#tipo-simples-colunar">Ver: simples colunar →</a>
+      </article>
+
+      <article class="pratica-card reveal">
+        <span class="tag-pratica"><svg class="icon" aria-hidden="true"><use href="#i-pratica"/></svg>Na prática</span>
+        <h3>Intestino e absorção</h3>
+        <p>Pregas, vilosidades e microvilosidades (borda em escova) multiplicam a área do epitélio simples colunar do intestino delgado. Ele se renova a partir das criptas.</p>
+        <p class="meaning">No cuidado de enfermagem, isso significa que <strong>inflamação, infecções e quimioterapia</strong> que lesam esse epitélio podem causar diarreia e prejudicar a absorção de nutrientes e de medicamentos orais — algo a observar no balanço hídrico e na aceitação da dieta.</p>
+        <a class="link-tissue" href="#tipo-simples-colunar">Ver: simples colunar →</a>
+      </article>
+    </div>
+
+    <p class="note reveal" style="margin-top:var(--sp-6)">
+      <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+      <span><strong>Material de estudo, não protocolo clínico.</strong> Os cartões NA PRÁTICA explicam o porquê histológico de cuidados conhecidos; condutas, técnicas e doses seguem os protocolos da sua instituição e as orientações do seu professor.</span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Rodapé ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Sobre este material</h2>
+        <p>Landing page de estudo de histologia (tecido epitelial e conjuntivo) para estudantes de enfermagem. Conteúdo didático; não substitui livros-texto, aulas ou protocolos institucionais.</p>
+      </div>
+      <div>
+        <h2>Fontes de estudo</h2>
+        <ul>
+          <li>Junqueira &amp; Carneiro — <em>Histologia Básica: Texto e Atlas</em>.</li>
+          <li>Ross &amp; Pawlina — <em>Histologia: Texto e Atlas</em>.</li>
+          <li>Gartner — <em>Tratado de Histologia</em>.</li>
+          <li>NPIAP — sistema de estadiamento de lesão por pressão.</li>
+          <li>INCA — Diretrizes brasileiras para o rastreamento do câncer do colo do útero.</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Créditos das imagens</h2>
+        <p>As lâminas serão de bancos de licença livre (Wikimedia Commons, domínio público ou Creative Commons), com autor, licença e link de origem. A lista completa será publicada aqui na Etapa 4. Esquemas em SVG: produzidos por código para este material.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Histologia na Enfermagem · material de estudo</span>
+      <a href="#topo">Voltar ao topo ↑</a>
+    </div>
+  </div>
+</footer>
+
+<button class="icon-btn to-top" type="button" id="to-top" aria-label="Voltar ao topo">
+  <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>
+</button>
+
+<!-- Lightbox para ampliar lâminas -->
+<dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+  <div class="lightbox__bar">
+    <h2 id="lightbox-title">Imagem</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Fechar imagem ampliada">
+      <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <div class="lightbox__body" id="lightbox-body"></div>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>
